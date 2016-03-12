@@ -1,4 +1,4 @@
-var SupercalculatorPage = new require('./supercalculator.page.js');
+var SupercalculatorPage = new require('../pages/supercalculator.page.js');
 
 describe('Protractor Demo App', function() {
   var page = new SupercalculatorPage();
