@@ -15,3 +15,20 @@ Funcionalidade: Navegar pelos financiamentos
     E preenchi o segundo número com 2
     Quando clico no botão para calcular
     Então vejo o resultado 3
+
+  Cenário: somar quatro com seis
+    Dado que naveguei para a calculadora
+    Quando faço a soma de 4 com 6
+    Então vejo o resultado 10
+
+  Cenário: deve haver histórico
+    Dado que naveguei para a calculadora
+    Quando faço a soma de 1 com 2
+    E faço a soma de 3 com 4
+    Então vejo 2 itens no histórico
+
+    Quando faço a soma de 5 com 6
+    Então vejo 3 itens no histórico
+    E a última linha do histórico contém "1 + 2"
+    E a primeira linha do histórico contém "5 + 6"
+    

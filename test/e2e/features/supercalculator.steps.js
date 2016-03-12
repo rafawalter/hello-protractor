@@ -31,7 +31,23 @@ module.exports = function() {
   });
 
   this.Given(/^vejo o resultado (\d+)$/, function (resultado) {
-    return expect(page.latestResult()).to.eventually.equal(resultado);
+    return expect(page.latestResult()).to.eventually.equal(String(resultado));
+  });
+
+  this.Given(/^faço a soma de (\d+) com (\d+)$/, function (a, b) {
+    return page.add(a, b);
+  });
+
+  this.Given(/^vejo (\d+) itens no histórico$/, function (quantidade) {
+    return expect(page.historyCount()).to.eventually.equal(Number(quantidade));
+  });
+
+  this.Given(/^a última linha do histórico contém "([^"]*)"$/, function (texto) {
+    return expect(page.lastHistory()).to.eventually.contain('1 + 2');
+  });
+
+  this.Given(/^a primeira linha do histórico contém "([^"]*)"$/, function (texto) {
+    return expect(page.firstHistory()).to.eventually.contain('5 + 6');
   });
 
 };
