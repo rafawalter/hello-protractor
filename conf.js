@@ -3,7 +3,7 @@ exports.config = {
   directConnect: true,
   // seleniumAddress: 'http://localhost:4444/wd/hub',
   // selelniumPort: 4444,
-  specs: ['spec.js'],
+  specs: ['spec.js', '*.page.js'],
   multiCapabilities: [{
     browserName: 'chrome'
 //  }, {
