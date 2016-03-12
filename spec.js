@@ -41,5 +41,8 @@ describe('Protractor Demo App', function() {
     add(5,6);
 
     expect(history.count()).toEqual(3);
+
+    expect(history.last().getText()).toContain('1 + 2');
+    expect(history.first().getText()).toContain('5 + 6');
   });
 });
