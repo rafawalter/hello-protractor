@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rafawalter/hello-protractor/issues"
   },
-  "homepage": "https://github.com/rafawalter/hello-protractor#readme"
+  "homepage": "https://github.com/rafawalter/hello-protractor#readme",
+  "dependencies": {
+    "protractor": "^3.1.1"
+  }
 }
