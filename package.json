@@ -6,8 +6,8 @@
   "scripts": {
     "test": "npm install && npm run webdriver-update && npm run unit && npm run e2e",
     "unit": "echo Aplicação externa, sem teste unitários",
-    "e2e": "npm run spec",
-    "spec": "protractor ./test/e2e/protractor.config.js",
+    "e2e": "npm run jasmine && npm run cucumber",
+    "jasmine": "protractor ./test/e2e/protractor-jasmine.config.js",
     "cucumber": "protractor ./test/e2e/protractor-cucumber.config.js",
     "webdriver-update": "webdriver-manager update",
     "selenium": "webdriver-manager start --standalone"
