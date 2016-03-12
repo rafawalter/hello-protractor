@@ -4,7 +4,8 @@
   "description": "Studing protractor, BDD helper for AngularJS http://angular.github.io/protractor/#/tutorial",
   "main": "conf.js",
   "scripts": {
-    "test": "protractor conf.js"
+    "test": "protractor conf.js",
+    "selenium": "webdriver-manager start --standalone"
   },
   "repository": {
     "type": "git",
