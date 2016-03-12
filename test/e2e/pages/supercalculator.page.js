@@ -13,6 +13,14 @@ var SupercalculatorPage = function() {
     return browser.getTitle();
   };
 
+  this.preencherPrimeiroNumeroCom = function(numero) {
+    firstNumber.sendKeys(numero);
+  };
+
+  this.preencherSegundoNumeroCom = function(numero) {
+    secondNumber.sendKeys(numero);
+  };
+
   this.add = function(a,b) {
     firstNumber.sendKeys(a);
     secondNumber.sendKeys(b);
@@ -20,6 +28,10 @@ var SupercalculatorPage = function() {
     goButton.click();
 
     return this.latestResult();
+  };
+
+  this.calculate = function() {
+    goButton.click();
   };
 
   this.historyCount = function() {

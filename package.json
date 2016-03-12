@@ -6,6 +6,7 @@
   "scripts": {
     "test": "npm install && npm run webdriver-update && npm run e2e",
     "e2e": "protractor ./test/e2e/protractor.config.js",
+    "cucumber": "protractor ./test/e2e/protractor-cucumber.config.js",
     "webdriver-update": "webdriver-manager update",
     "selenium": "webdriver-manager start --standalone"
   },
@@ -21,5 +22,11 @@
   "homepage": "https://github.com/rafawalter/hello-protractor#readme",
   "dependencies": {
     "protractor": "^3.1.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-as-promised": "^5.2.0",
+    "cucumber": "^0.9.5",
+    "protractor-cucumber-framework": "^0.3.4"
   }
 }

@@ -11,7 +11,7 @@ describe('Protractor Demo App', function() {
     expect(page.title()).toEqual('Super Calculator');
   });
 
-  it('should add onde and two', function() {
+  it('should add one and two', function() {
     expect(page.add(1,2)).toEqual('3');
 
     expect(page.latestResult()).toEqual('3');
