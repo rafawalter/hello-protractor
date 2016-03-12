@@ -3,6 +3,7 @@ describe('Protractor Demo App', function() {
   var secondNumber = element(by.model('second'));
   var goButton = element(by.id('gobutton'));
   var latestResult = element(by.binding('latest'));
+  var history = element.all(by.repeater('result in memory'));
 
   beforeEach(function() {
     browser.get('http://juliemr.github.io/protractor-demo');
