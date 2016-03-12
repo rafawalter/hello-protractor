@@ -7,8 +7,8 @@ exports.config = {
   specs: ['./specs/**/*.js', './pages/**/*.js'],
 
   multiCapabilities: [{
-    browserName: 'chrome'
+//    browserName: 'chrome'
 //  }, {
-//    browserName: 'firefox'
+    browserName: 'firefox'
   }]
 };
