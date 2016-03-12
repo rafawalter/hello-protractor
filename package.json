@@ -1,0 +1,19 @@
+{
+  "name": "hello-protractor",
+  "version": "1.0.0",
+  "description": "Studing protractor, BDD helper for AngularJS http://angular.github.io/protractor/#/tutorial",
+  "main": "conf.js",
+  "scripts": {
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafawalter/hello-protractor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafawalter/hello-protractor/issues"
+  },
+  "homepage": "https://github.com/rafawalter/hello-protractor#readme"
+}
