@@ -7,7 +7,7 @@ module.exports = function() {
   var expect = chai.expect;
 
 
-  var SupercalculatorPage = new require('../pages/supercalculator.page.js');
+  var SupercalculatorPage = new require('../../pages/supercalculator.page.js');
   var page = new SupercalculatorPage();
 
   this.Given(/^que naveguei para a calculadora$/, function () {
